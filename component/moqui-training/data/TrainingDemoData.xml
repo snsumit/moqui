@@ -1,0 +1,8 @@
+<entity-facade-xml>
+     <training.MoquiTraining
+             trainingId="TR005" trainingName="Java Basics" trainingPrice="200" trainingDuration="5"  trainingDate="2025-02-15"/>
+     />
+    <training.MoquiTraining trainingId="TR006" trainingName="Python Fundamentals" trainingPrice="150" trainingDuration="4" trainingDate="2025-02-18"/>
+
+    <training.MoquiTraining trainingId="TR007" trainingName="ReactJS Workshop" trainingPrice="250" trainingDuration="3" trainingDate="2025-02-20"/>
+</entity-facade-xml>

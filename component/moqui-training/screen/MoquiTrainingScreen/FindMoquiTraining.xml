@@ -1,0 +1,56 @@
+<screen require-authentication="anonymous-all" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-3.xsd" xmlns="">
+
+
+    <transition name="createMoquiTraining">
+        <service-call name="create#training.MoquiTraining"/>
+        <default-response url="."/>
+    </transition>
+
+
+
+    <actions>
+        <entity-find entity-name="MoquiTraining" list="moquiTrainingList">
+            <search-form-inputs/>
+        </entity-find>
+    </actions>
+
+
+    <widgets>
+
+        <form-single name="MoquiTrainingSearchForm"  >
+            <auto-fields-entity entity-name="MoquiTraining" field-type="find" />
+                       <field name="submitButton" >
+
+                            <default-field title="search" >
+                                 <submit />
+                            </default-field>
+                       </field>
+
+
+                    </form-single>
+
+        <container-dialog id="CreateMoquiTrainingDialog" button-text="Create Moqui Training">
+            <form-single name="CreateMoquiTrainingForm" transition="createMoquiTraining">
+                <auto-fields-entity entity-name="MoquiTraining" field-type="edit"/>
+                <field name="submitButton">
+                    <default-field title="Create">
+                        <submit/>
+                    </default-field>
+                </field>
+            </form-single>
+        </container-dialog>
+        <form-list name="MoquiTrainingList" list="moquiTrainingList" header-dialog="true" skip-form="true" >
+            <field name="trainingId">
+                <header-field>
+                    <text-find hide-options="true" />
+                </header-field>
+            </field>
+            <auto-fields-entity entity-name="MoquiTraining" field-type="display"/>
+        </form-list>
+
+
+    </widgets>
+
+
+</screen>

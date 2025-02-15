@@ -3,7 +3,9 @@
    <screen-facade>
            <screen location="component://webroot/screen/webroot/apps.xml">
 
-               <subscreens-item name="moquiTrainingScreen" menu-title="MoquiTraining" location="component://moqui-training/screen/MoquiTrainingScreen.xml"/>
+               <subscreens-item name="MoquiTrainingscreen" menu-title="MoquiTraining"  location="component://moqui-training/screen/MoquiTrainingScreen.xml"/>
+
+
            </screen>
 
    </screen-facade>

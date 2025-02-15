@@ -1,0 +1,36 @@
+<screen require-authentication="anonymous-all" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-3.xsd">
+
+    <subscreens default-item="FindMoquiTraining">
+        <subscreens-item name="FindMoquiTraining" location="component://moqui-training/screen/MoquiTrainingScreen/FindMoquiTraining.xml" />
+    </subscreens>
+
+
+   <widgets>
+
+           <subscreens-panel id="example" type="tab" />
+<!--        <label text="Hello This is The first heading of the moquiTraining" type="h1"/>-->
+
+<!--        <label text="Hello This is  the second heading of the moquiTraining" type="h2" />-->
+
+<!--        <label text="This is to demonstrate that it is an paragraph" type="p" />-->
+
+
+<!--        <label text="This is an orderd list" type="p" />-->
+<!--        <container type="ol">-->
+<!--            <container type="li"><label  text="This is an item" type="p"/></container>-->
+
+<!--            <container type="li"><label text="This is an item" type="p"/></container>-->
+<!--            <container type="li"><label text="This is an item" type="p"/></container>-->
+<!--        </container>-->
+
+<!--        <label text="This is am unorderd list" type="p" />-->
+<!--        <container type="ul">-->
+<!--            <container type="li"><label text="This is an item" type="p"/></container>-->
+<!--            <container type="li"><label text="This is an item" type="p"/></container>-->
+<!--            <container type="li"><label text="This is an item" type="p"/></container>-->
+<!--        </container>-->
+
+    </widgets>
+
+
+</screen>
