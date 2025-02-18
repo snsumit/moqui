@@ -1,1 +1,23 @@
-Put your add-on component directories in this directory to load them when Moqui runs.
+# Moqui Training Component<br>
+In the component folder created a moqui-training component which have the following setup process
+
+
+This repository contains the `moqui-training` component for Moqui Framework. This component includes various files and configurations to set up Moqui with training data and screens.
+
+
+1) clone the moqui-framework from the github <br>
+2) After that for running the Moqui clone the runtime folder as an runtime folder from the github<br>
+3) Then To make the database connection Make changes in the MoquiDevConfig file<br>
+ <h4>Update the MoquiDevConfigFile</h4><br>
+ <p>
+    <default-property name="entity_ds_db_conf" value="mysql8"/><br>
+    <default-property name="entity_ds_user" value="root"/><br>
+    <default-property name="entity_ds_password" value="password"/><br>
+    <default-property name="entity_ds_host" value="127.0.0.1" /><br>
+    <default-property name="entity_ds_port" value="3306"/><br>
+    <default-property name="entity_ds_database" value="moqui"/><br>
+    
+    </p>
+
+4) to connect with the database jar file is required which is put in the lib folder. <br>
+5) And then test it by running the application with the help of ./gradlew run <br>
